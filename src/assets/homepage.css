@@ -1,0 +1,61 @@
+.sidebar.col-sm-5 {
+  width: max-content;
+  background-color: #80808021;
+  height: 1000px;
+}
+
+.nav-link {
+  color: #000000;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: rgb(74, 99, 243);
+  background-color: unset;
+}
+
+.sidebar.col-sm-3 {
+  background-color: #d3d3d34d;
+}
+
+.flex-column.sidebar-box.nav.nav-pills {
+  margin-top: 100px;
+}
+
+sm{
+  margin-left: 15px;
+  font-size: x-small;
+}
+
+.sidebar-items {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.HomepageContent{ 
+margin-left: 15px;
+margin-top: 105px;
+}
+
+.Generate{  
+background-color: #80808017;
+    height: 50px;
+    border-left: solid 3px black;
+
+}
+
+.GenerateBody{
+top: 15px;
+left: 10px;
+position: relative;
+}
+
+.arrow{
+    margin-left: 650px;
+    margin-top: -16px;
+}
+
+
+/* [role=navigation]{
+  background: blue;
+} */
