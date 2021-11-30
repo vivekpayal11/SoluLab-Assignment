@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Chatter Coding Challenge 🤖 &nbsp; ![hard](https://img.shields.io/badge/-Hard-red) ![time](https://img.shields.io/badge/%E2%8F%B0-60m-blue)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+&nbsp;
+# Goals / Outcomes ✨
+- To test knowledge of using sockets (socket.io) and events
+- Understanding of callbacks, hooks and function references
 
-## Available Scripts
+&nbsp;
+# Pre-requisites ✅
+None
 
-In the project directory, you can run:
+&nbsp;
+# Requirements 📖
+Most of the work needs to be done in the `Messages` components.
 
-### `npm start`
+- Implement hooks such as `useEffect` and `useCallback` to handle events
+- Scroll to the bottom of the messages list when sending/receiving a message
+- Show the initial Botty message by default (can be found in `common/constants`)
+- Use **sockets** to:
+  - Send the user's message to Botty
+  - Show a typing message when Botty is typing
+  - Handle incoming Botty messages and display them
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+&nbsp;
+# Botty Socket Events
+See the [Botty server](https://github.com/alexgurr/botty) documentation for more information.
+- `bot-typing`: Emitted by Botty when they are typing in response to a user message.
+- `bot-message`: Emitted by Botty with a message payload in response to a user message.
+- `user-message`: Emitted by you/the client with a messsage payload
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+&nbsp;
+# Message Classes
+We've provided `Message` components and classes. Here's some information about the classes.
+- `.message--last`: The last message in a group
+- `.message--typing`: The message the user sees when the recipient is typing
+- `.message--me`: Denotes a user message
 
-### `npm test`
+&nbsp;
+# Think about 💡
+- References to functions and current hook state
+- How to interact with socket.io, events and payloads
+- How React contexts work
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+&nbsp;
+# What's Already Been Done 🏁
+- Socket setup/configuration with the [Botty server](https://github.com/alexgurr/botty) ([botty.alexgurr.com](https://botty.alexgurr.com))
+- All UX and UI, including for messages
+- All components, including a message and typing message component
+- A context for setting the latest message, which will change the preview in the left user list
+- Hooks for playing send/receive sounds
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+&nbsp;
+# Screenshots 🌄
+&nbsp;
+![screenshot-desktop](https://puu.sh/Hp0C2/cb14e843de.png)
+<img alt="screenshot-mobile" width=400 src="https://puu.sh/HoYEw/9b760f91f7.png" />
